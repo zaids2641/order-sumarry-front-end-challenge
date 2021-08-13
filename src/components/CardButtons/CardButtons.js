@@ -11,7 +11,7 @@ const Button = styled.button`
 `;
 
 function CardButtons() {
-    const [openModal, setOpenModal] = useState(true);
+    const [openModal, setOpenModal] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
