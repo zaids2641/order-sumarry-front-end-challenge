@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* Container */
+.CardSummary__card-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    padding-top: 2rem;
+}
+
+/* Card */
+.CardSummary__card {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 365px;
+    z-index: 99999999;
+    -webkit-box-shadow: 9px 16px 18px -8px rgba(197, 206, 239,0.19); 
+    box-shadow: 9px 16px 18px -8px rgba(197, 206, 239, 0.836);
+}
+
+/* Hero */
+.CardSummary__card-hero {
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+}
+
+/* Card Body */
+.CardSummary__card-body {
+    margin-top: -5px;
+    height: 100%;
+    background: #FFFFFF;
+    padding: 0 4rem;
+    padding: 0 2rem;
+}
+
+/* Card Title */
+.CardSummary__card-title {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 0.91rem;
+}
+
+/* Card Text */
+.CardSummary__card-text {
+    padding-top: .5rem;
+}
+
+.CardSummary__card-body h1, h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #707279;
+}
+
+.CardSummary__card-body p {
+    text-align: center;
+    color: #8D95A5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.CardSummary__card-body p, .CardSummary__card-plan-text, .CardSummary__change-plan {
+    font-size: .9rem;
+}
+
+/* Card Container Plan */
+.CardSummary__card-plan-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+
+.CardSummary__card-plan {
+    display: flex;
+    align-items: center;
+}
+
+.CardSummary__card-plan-text {
+    padding-left: 1rem;
+}
+
+.CardSummary__change-plan a {
+    color: #5B56AA;
+    font-weight: 600;
+    transition: all .5s ease-in-out;
+}
+
+.CardSummary__change-plan a:hover {
+    color: #6764b5ee;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 576px) {
+    .App__main {
+        position: relative;        
+        width: 100%;
+        height: 28.5vh;
+    }
+
+    /* Card Title */
+    .CardSummary__card-title {
+        padding-top: 2rem;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+    /* Card Text */
+    
+    .card__card-buttons .proceed-button, .cancel-button {
+        font-size: 2.5vw;
+    }
+}
